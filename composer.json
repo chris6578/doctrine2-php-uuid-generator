@@ -1,7 +1,7 @@
 {
     "name": "creof/doctrine2-php-uuid-generator",
     "type": "library",
-    "description": "Doctrine2 pre-insert UUID id generator using PECL UUID package",
+    "description": "Doctrine2 pre-insert UUID id generator using PECL UUID (*nix) or COM (Windows)",
     "keywords": ["orm", "database", "id", "generator", "uuid"],
     "authors": [
         {
@@ -20,7 +20,7 @@
         "phpunit/phpunit": "3.7.*"
     },
     "suggest": {
-        "lib-uuid": "Required for *NIX type environments"
+        "lib-uuid": "Required for *nix type environments"
     },
     "autoload": {
         "psr-0": {
