@@ -37,7 +37,7 @@ class PhpUuidGenerator extends AbstractIdGenerator
      */
     public function generate(EntityManager $em, $entity)
     {
-        if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+        if (defined('PHP_WINDOWS_VERSION_BUILD')) {
             return com_create_guid();
         }
 
