@@ -38,7 +38,7 @@ class PhpUuidGenerator extends AbstractIdGenerator
     public function generate(EntityManager $em, $entity)
     {
         if (defined('PHP_WINDOWS_VERSION_BUILD')) {
-            return com_create_guid();
+            return substr(com_create_guid(), 1, 36);
         }
 
         return uuid_create(UUID_TYPE_RANDOM);
