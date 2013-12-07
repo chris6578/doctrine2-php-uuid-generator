@@ -20,7 +20,8 @@
         "phpunit/phpunit": "3.7.*"
     },
     "suggest": {
-        "lib-uuid": "Required for *nix type environments"
+        "lib-uuid": "Required for *nix type environments",
+        "ext-com_dotnet": "Required for Windows environments"
     },
     "autoload": {
         "psr-0": {
