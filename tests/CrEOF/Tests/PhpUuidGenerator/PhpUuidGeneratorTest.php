@@ -48,6 +48,8 @@ class PhpUuidGeneratorTest extends \Doctrine\Tests\OrmFunctionalTestCase
     public function testGeneration()
     {
         $id = $this->_generator->generate($this->_em, null);
+
+        $this->assertRegExp('/[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}/', $id);
     }
 
 }
