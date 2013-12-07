@@ -20,13 +20,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
 namespace CrEOF\PhpUuidGenerator;
 
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Id\AbstractIdGenerator;
 
 /**
- * UUID id generator utilizing PHP UUID library enabling pre-insert id generation
+ * Native UUID id generator enabling pre-insert id generation
  *
  * @author Derek Lambert <dlambert@dereklambert.com>
  */
